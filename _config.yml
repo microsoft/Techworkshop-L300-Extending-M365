@@ -1,10 +1,10 @@
-title: TechExcel ERP Transformation with Agents for Finance and Supply Chain
+title: L300 Extending M365
 description: 
 theme: just-the-docs
 
 aux_links:
-  "TechExcel: ERP Transformation with Agents for Finance and Supply Chain": 
-    - "https://github.com/microsoft/TechWorkshop-L300-ERP-transformation-with-agents-for-Finance-and-Supply-Chain"
+  "L300 Extending M365": 
+    - "https://github.com/microsoft/Techworkshop-L300-Extending-M365"
 
 callouts_level: quiet # or loud
 callouts:
