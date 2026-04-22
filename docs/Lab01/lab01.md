@@ -1,6 +1,6 @@
 ---
 title: 'Lab 1: TechLab MCP Server integration and connected agents'
-layout: page
+layout: post
 nav_order: 2
 ---
 
