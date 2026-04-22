@@ -1,0 +1,156 @@
+{"0": {
+    "doc": "01. Run the application",
+    "title": "Task 01: Run the application",
+    "content": "Description . You’ll open the Trey Research project in Visual Studio Code, sign in to the Microsoft 365 Agents Toolkit, and start the debugger to run the Azure Functions API locally. Success criteria . | You signed in to your Microsoft 365 account through the Agents Toolkit. | The debugger started successfully and Microsoft Edge opened a sign-in window. | You minimized Edge without signing in, leaving the debugger running. | . Key steps . | Sign in to the lab VM with the following credentials: . | Item | Value | . | Username | @lab.VirtualMachine(Windows11(25H2)).Username | . | Password | +++@lab.VirtualMachine(Windows11(25H2)).Password+++ | . | Open Visual Studio Code. This will open a project folder with a declarative agent located in C:\\Lab Files\\lab-build-api. | In the leftmost pane, select the Microsoft 365 Agents Toolkit icon. | In the MICROSOFT 365 AGENTS TOOLKIT pane, under the ACCOUNTS section, select Sign in to Microsoft 365. | In the dialog, select Sign in. | In the Windows Security dialog, select Allow. | Sign in with your lab credentials: . | Item | Value | . | Username | @lab.CloudPortalCredential(User1).Username | . | Password | @lab.CloudPortalCredential(User1).AccessToken | . | Close the browser to return to Visual Studio Code. | In the top menu bar, select Run, then Start Debugging. This may take a couple minutes to start. | In the Windows Security dialog, select Allow. Once started, Microsoft Edge will open a sign in window. | Minimize Microsoft Edge without signing in. Do not close the window as that will stop the debugger. | . ",
+    "url": "/docs/Lab01/01_BuildBackendAPI/01.01.html#task-01-run-the-application",
+    
+    "relUrl": "/docs/Lab01/01_BuildBackendAPI/01.01.html#task-01-run-the-application"
+  },"1": {
+    "doc": "01. Run the application",
+    "title": "01. Run the application",
+    "content": " ",
+    "url": "/docs/Lab01/01_BuildBackendAPI/01.01.html",
+    
+    "relUrl": "/docs/Lab01/01_BuildBackendAPI/01.01.html"
+  },"2": {
+    "doc": "Exercise 01: Build a backend API",
+    "title": "Exercise 01: Build a backend API",
+    "content": "In this exercise, you’ll set up an API based on Azure Functions and install it as an API plugin for Microsoft 365 Copilot. ",
+    "url": "/docs/Lab01/01_BuildBackendAPI/01_BuildBackendAPI.html",
+    
+    "relUrl": "/docs/Lab01/01_BuildBackendAPI/01_BuildBackendAPI.html"
+  },"3": {
+    "doc": "Exercise 01: Build a backend API",
+    "title": "Introduction",
+    "content": "In this exercise, you’ll set up a REST API for Trey Research, a hypothetical consulting company. It provides API’s for accessing information about consultants (using the /api/consultants path) and about the current user (using the /api/me path). For now, the API doesn’t support authentication, so the current user will always be a dummy user, Avery Howard. The code consists of Azure Functions written in TypeScript, backed by a database in Azure Table storage. When you run the app locally, table storage will be provided by the Azurite storage emulator. How was this API created? . The project was created using the Microsoft 365 Agents Toolkit. You can create the same scaffolding for your own project by opening an empty folder in VS Code and going to Agents Toolkit. Read more. ",
+    "url": "/docs/Lab01/01_BuildBackendAPI/01_BuildBackendAPI.html#introduction",
+    
+    "relUrl": "/docs/Lab01/01_BuildBackendAPI/01_BuildBackendAPI.html#introduction"
+  },"4": {
+    "doc": "L300: Extending Microsoft 365",
+    "title": "L300: Extending Microsoft 365",
+    "content": "Build intelligent, context-aware agents that extend Microsoft 365 Copilot with custom knowledge, APIs, and multi-agent orchestration. ",
+    "url": "/",
+    
+    "relUrl": "/"
+  },"5": {
+    "doc": "L300: Extending Microsoft 365",
+    "title": "Introduction",
+    "content": "Declarative agents are specialized, intelligent assistants built on Microsoft’s AI platform. They enable organizations to extend Microsoft 365 Copilot with domain-specific knowledge, custom APIs, and intelligent workflows—all without replacing the familiar Microsoft 365 experience. This learning path takes you from building your first agent and API to orchestrating multiple agents that coordinate seamlessly to deliver unified, intelligent responses to complex business scenarios. What you’ll build . You’ll progress through two comprehensive labs using the Microsoft 365 Agents Toolkit, building agents for two realistic scenarios: . | Trey Research — A consulting firm that needs to manage consultant profiles, project assignments, and delivery tracking through an AI-powered agent backed by a custom REST API. | Zava Insurance — An insurance company automating their claims process with AI-powered agents that integrate with Model Context Protocol (MCP) servers, coordinate across specialized agents, and access real-time data from multiple sources. By the end, you’ll understand how to architect, build, and deploy production-ready agents that handle real-world complexity. | . ",
+    "url": "/#introduction",
+    
+    "relUrl": "/#introduction"
+  },"6": {
+    "doc": "L300: Extending Microsoft 365",
+    "title": "Duration",
+    "content": "Estimated Time . | TechLab: MCP Server Integration and Connected Agents — 120 minutes | Building Declarative Agents with TypeScript and Microsoft 365 Agents Toolkit — 180+ minutes | Total — ~5 hours | . ",
+    "url": "/#duration",
+    
+    "relUrl": "/#duration"
+  },"7": {
+    "doc": "L300: Extending Microsoft 365",
+    "title": "Core technologies and tools",
+    "content": "Microsoft 365 Agents toolkit . The primary development framework for building declarative agents. Provides: . | Scaffolding for agent projects (manifest files, API plugins, knowledge sources) | Local debugging and testing via VS Code extension | Integration with Microsoft 365 Copilot platform Azure Functions and REST APIs . Backend APIs that power agent actions. In these labs, you’ll: . | Write Azure Functions in TypeScript | Use Azurite storage emulator for local development | Expose APIs via OpenAPI specifications | Register APIs as Copilot plugins Model Context Protocol (MCP) . A standardized protocol that lets AI agents securely access backend systems and data sources. | Enables real-time data retrieval without indexing into Microsoft Graph | Provides a “translator” between agents and enterprise systems | Used in Lab 2 to bridge agents and claims management systems Microsoft 365 platform integration . | SharePoint — Knowledge source for declarative agents | Microsoft 365 Copilot — Foundational orchestrator and LLM infrastructure | Microsoft 365 Admin Center — Connector configuration and management | Microsoft 365 Search — Data discovery and retrieval Development stack . | Language — TypeScript | IDE — Visual Studio Code with Microsoft 365 Agents Toolkit extension | Deployment — Azure (Functions, Storage, Connectors) | ",
+    "url": "/#core-technologies-and-tools",
+    
+    "relUrl": "/#core-technologies-and-tools"
+  },"8": {
+    "doc": "L300: Extending Microsoft 365",
+    "title": "Testing — HTTP client (VS Code), MCP Inspector, direct Copilot prompts",
+    "content": "| . ",
+    "url": "/#testing--http-client-vs-code-mcp-inspector-direct-copilot-prompts",
+    
+    "relUrl": "/#testing--http-client-vs-code-mcp-inspector-direct-copilot-prompts"
+  },"9": {
+    "doc": "L300: Extending Microsoft 365",
+    "title": "Architecture",
+    "content": "Declarative agent stack . At the foundation is Microsoft 365 Copilot, which provides: . | Foundational LLM (large language model) | Unified orchestrator for routing and coordination | Security controls and compliance infrastructure | Consistent user experience across Microsoft 365 | . On top of this, you build: . | Custom Knowledge — SharePoint documents, connectors, Microsoft 365 data indexed for grounding | Custom Actions — REST APIs (plugins) that let agents perform domain-specific operations | Agent Manifest — Configuration defining your agent’s instructions, capabilities, conversation starters, and connected actions | Intelligence Layer — Multi-agent orchestration (Lab 2) where specialized agents coordinate to solve complex scenarios ┌─────────────────────────────────────────┐ │ Declarative Agent (User Interface) │ │ - Instructions &amp; Conversation Starters │ │ - Multi-Agent Orchestration (Lab 2) │ ├─────────────────────────────────────────┤ │ Knowledge &amp; Actions │ │ - SharePoint Knowledge │ │ - API Plugins (REST APIs) │ │ - MCP Servers / Connectors │ ├─────────────────────────────────────────┤ │ Microsoft 365 Copilot (Platform) │ │ - Foundation Model &amp; Orchestrator │ │ - Security, Compliance, Integration │ └─────────────────────────────────────────┘ . | . Lab 1: API Plugin Architecture (TechLab) . Single agent + custom REST API + SharePoint knowledge: . Declarative Agent (Trey Genie) ↓ ├─→ API Plugin (Azure Functions) → Azure Table Storage └─→ SharePoint Knowledge (Copilot Connector) . Diagram . Lab 2: MCP + Multi-Agent Architecture (Declarative Agents) . Multiple coordinated agents + MCP server + knowledge sources: . Orchestrator Agent (Claims Router) ↓ ├─→ Claims Agent ─→ MCP Server ─→ Claims Database ├─→ Contractors Agent ─→ SharePoint Knowledge └─→ Procurement Agent ─→ Purchase Order Data . ",
+    "url": "/#architecture",
+    
+    "relUrl": "/#architecture"
+  },"10": {
+    "doc": "L300: Extending Microsoft 365",
+    "title": "Learning outcomes",
+    "content": "By completing this learning path, you’ll be able to: . Fundamentals (Lab 1) . | Build and run Azure Functions-based REST APIs locally | Create declarative agents using the Microsoft 365 Agents Toolkit | Register APIs as Copilot plugins via OpenAPI specifications | Configure agent manifests with instructions, capabilities, and knowledge sources | Integrate multiple knowledge sources (APIs + SharePoint) into a single agent Advanced (Lab 2) | Understand and implement Model Context Protocol (MCP) servers | Build agents that query backend systems via MCP without indexing data into Microsoft Graph | Design multi-agent architectures with specialized agents and orchestrators | Coordinate multiple agents to deliver unified responses to complex prompts | ",
+    "url": "/#learning-outcomes",
+    
+    "relUrl": "/#learning-outcomes"
+  },"11": {
+    "doc": "L300: Extending Microsoft 365",
+    "title": "[ ] Deploy and test production-ready agent systems",
+    "content": "| . ",
+    "url": "/#--deploy-and-test-production-ready-agent-systems",
+    
+    "relUrl": "/#--deploy-and-test-production-ready-agent-systems"
+  },"12": {
+    "doc": "L300: Extending Microsoft 365",
+    "title": "Prerequisites",
+    "content": "Before starting, ensure you have: . | Access to a Microsoft 365 tenant (or lab environment provided) | Visual Studio Code with the Microsoft 365 Agents Toolkit extension | Basic familiarity with TypeScript and REST APIs | Understanding of JSON configuration files (manifests) | ",
+    "url": "/#prerequisites",
+    
+    "relUrl": "/#prerequisites"
+  },"13": {
+    "doc": "L300: Extending Microsoft 365",
+    "title": "Familiarity with Azure services (Functions, Storage, admin portal)",
+    "content": "| . ",
+    "url": "/#familiarity-with-azure-services-functions-storage-admin-portal",
+    
+    "relUrl": "/#familiarity-with-azure-services-functions-storage-admin-portal"
+  },"14": {
+    "doc": "L300: Extending Microsoft 365",
+    "title": "Getting started",
+    "content": ". | Start with Lab 1: TechLab — Build your first agent and understand the fundamentals | Progress to Lab 2 — Apply those skills to a more complex, real-world scenario | Experiment — Modify the agent manifests, add new API endpoints, create your own agents Each lab includes detailed, hands-on exercises with step-by-step instructions, images, and success criteria. | . ",
+    "url": "/#getting-started",
+    
+    "relUrl": "/#getting-started"
+  },"15": {
+    "doc": "L300: Extending Microsoft 365",
+    "title": "Additional resources",
+    "content": ". | Microsoft 365 Agents Toolkit Documentation | Model Context Protocol (MCP) Specification | Microsoft 365 Copilot Platform Overview | ",
+    "url": "/#additional-resources",
+    
+    "relUrl": "/#additional-resources"
+  },"16": {
+    "doc": "L300: Extending Microsoft 365",
+    "title": "Azure Functions Documentation",
+    "content": "| . Ready to extend Microsoft 365? Start with Lab 1 below. ",
+    "url": "/#azure-functions-documentation",
+    
+    "relUrl": "/#azure-functions-documentation"
+  },"17": {
+    "doc": "Lab 1: TechLab MCP Server integration and connected agents",
+    "title": "TechLab MCP Server integration and connected agents",
+    "content": " ",
+    "url": "/docs/Lab01/lab01.html#techlab-mcp-server-integration-and-connected-agents",
+    
+    "relUrl": "/docs/Lab01/lab01.html#techlab-mcp-server-integration-and-connected-agents"
+  },"18": {
+    "doc": "Lab 1: TechLab MCP Server integration and connected agents",
+    "title": "Introduction",
+    "content": "Declarative agents are a type of agent for Microsoft 365. You can build one by extending Microsoft 365 Copilot. You define custom knowledge and custom actions to create agents tailored to a specific scenario. Declarative agents use the same infrastructure, orchestrator, foundation model, and security controls as Microsoft 365 Copilot, which ensures a consistent and familiar user experience. ",
+    "url": "/docs/Lab01/lab01.html#introduction",
+    
+    "relUrl": "/docs/Lab01/lab01.html#introduction"
+  },"19": {
+    "doc": "Lab 1: TechLab MCP Server integration and connected agents",
+    "title": "Objectives",
+    "content": "After completing this lab, you’ll be able to: . | Run and test an Azure Functions-based REST API locally using the Azurite storage emulator. | Verify API behaviour using HTTP test requests in VS Code. | Create a declarative agent backed by an API plugin and SharePoint knowledge. | Configure a declarative agent manifest with instructions, conversation starters, and capabilities. | Extend an existing API with new resource paths and register them in the application package. | Update the OpenAPI Specification and plugin definition files to expose new functions to Copilot. | Integrate a Microsoft 365 Copilot Connector as a knowledge capability in a declarative agent. | . ",
+    "url": "/docs/Lab01/lab01.html#objectives",
+    
+    "relUrl": "/docs/Lab01/lab01.html#objectives"
+  },"20": {
+    "doc": "Lab 1: TechLab MCP Server integration and connected agents",
+    "title": "Duration",
+    "content": "Estimated time: 120 minutes . Declarative agent architecture diagram . At the very basis is the foundational model of Microsoft 365 Copilot, as well as the same orchestrator. The agent provides custom knowledge, grounding data, and custom skills as actions, triggers, and workflows. ",
+    "url": "/docs/Lab01/lab01.html#duration",
+    
+    "relUrl": "/docs/Lab01/lab01.html#duration"
+  },"21": {
+    "doc": "Lab 1: TechLab MCP Server integration and connected agents",
+    "title": "Lab 1: TechLab MCP Server integration and connected agents",
+    "content": " ",
+    "url": "/docs/Lab01/lab01.html",
+    
+    "relUrl": "/docs/Lab01/lab01.html"
+  }
+}
