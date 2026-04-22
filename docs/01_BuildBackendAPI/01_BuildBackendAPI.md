@@ -22,7 +22,7 @@ In this exercise, you'll set up a REST API for Trey Research, a hypothetical con
 
 The code consists of Azure Functions written in TypeScript, backed by a database in Azure Table storage. When you run the app locally, table storage will be provided by the Azurite storage emulator.
 
-{: .knowledge } 
+{: .important } 
 > **How was this API created?**
 >
 > The project was created using the Microsoft 365 Agents Toolkit. You can create the same scaffolding for your own project by opening an empty folder in VS Code and going to Agents Toolkit. [Read more](https://learn.microsoft.com/en-us/microsoft-365-copilot/extensibility/build-declarative-agents).
