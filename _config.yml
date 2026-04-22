@@ -1,0 +1,24 @@
+title: TechExcel ERP Transformation with Agents for Finance and Supply Chain
+description: 
+theme: just-the-docs
+
+aux_links:
+  "TechExcel: ERP Transformation with Agents for Finance and Supply Chain": 
+    - "https://github.com/microsoft/TechWorkshop-L300-ERP-transformation-with-agents-for-Finance-and-Supply-Chain"
+
+callouts_level: quiet # or loud
+callouts:
+  highlight:
+    color: yellow
+  important:
+    title: important
+    color: blue
+  new:
+    title: new
+    color: green
+  note:
+    title: note 
+    color: purple
+  warning:
+    title: warning
+    color: red
