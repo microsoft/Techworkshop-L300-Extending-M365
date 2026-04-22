@@ -2,7 +2,6 @@
 title: 'Lab 1: TechLab MCP Server integration and connected agents'
 layout: page
 nav_order: 2
-has_children: true
 ---
 
 # TechLab MCP Server integration and connected agents
