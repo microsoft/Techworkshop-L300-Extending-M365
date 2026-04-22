@@ -3,7 +3,6 @@ title: 'Exercise 01: Build a backend API'
 layout: default
 nav_order: 3
 has_children: true
-parent: 'Lab 1: TechLab MCP Server integration and connected agents'
 ---
 
 # Exercise 01: Build a backend API
